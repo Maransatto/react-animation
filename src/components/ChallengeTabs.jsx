@@ -9,7 +9,7 @@ function Tab({ isSelected, onSelect, badgeCaption, children }) {
         onClick={onSelect}
       >
         {children}
-        <Badge caption={badgeCaption}></Badge>
+        <Badge key={badgeCaption} caption={badgeCaption}></Badge>
       </button>
       {isSelected && (
         // just by setting a layoutId in an element that can be rerendered somewhere else, it
